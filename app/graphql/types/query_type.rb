@@ -19,6 +19,7 @@ module Types
     end
 
     field :departments, resolver: Resolvers::DepartmentsResolver
+    field :students, resolver: Resolvers::StudentsResolver
 
   end
 end
