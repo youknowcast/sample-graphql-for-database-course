@@ -20,6 +20,7 @@ module Types
 
     field :departments, resolver: Resolvers::DepartmentsResolver
     field :students, resolver: Resolvers::StudentsResolver
+    field :top_students, resolver: Resolvers::TopStudentsResolver
 
   end
 end
