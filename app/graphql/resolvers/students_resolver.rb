@@ -3,7 +3,7 @@ module Resolvers
     type Types::StudentType.connection_type, null: false
 
     def resolve
-      Student.all
+      Student.includes(:instructor).all
     end
   end
 end
