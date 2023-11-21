@@ -5,7 +5,7 @@ module Resolvers
     type [Types::StudentType], null: false
 
     def resolve
-      Student.limit(TOP_COUNT)
+      Student.order(:ID).limit(TOP_COUNT)
     end
   end
 end
