@@ -17,9 +17,7 @@ module Mutations
         student = Student.find(student_id)
         section = Section.find([course_id, sec_id, semester, year])
 
-        p student
-        p section
-        Take.create!(student:, section:, grade: grade)
+        Take.create!(student:, section:, grade:)
       end
     end
   end
