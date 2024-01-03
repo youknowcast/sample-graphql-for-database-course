@@ -8,5 +8,14 @@ module Types
     field :tot_cred, GraphQL::Types::Int, null: false
     field :instructor, Types::InstructorType
     field :takes, [Types::TakeType]
+
+    def instructor
+      advisor = dataloader.with(Sources::SingleRecord, Advisor, key: :s_ID).load(object.ID)
+      dataloader.with(Sources::SingleRecord, Instructor, key: 'ID').load(advisor&.i_ID)
+    end
+
+    def department
+      dataloader.with(Sources::SingleRecord, Department, key: :dept_name).load(object.dept_name)
+    end
   end
 end
