@@ -16,3 +16,20 @@ The server can be started with `rails s`.
 This implementation was created by @youknowcast for the purpose of being used as a sample in university lectures.
 For inquiries regarding this server implementation or its specifications, please contact @youknowcast.
 
+## For Students Reviewing University Lectures
+
+The revision tagged as `2023-database-course` represents the state of the repository as it was during the time the lectures were conducted in 2023. This tag is intended to help students who are reviewing the course material after the lectures.
+
+Please note that any changes made to the repository after the lectures were conducted are not part of the course material covered in the lectures. These updates may include enhancements, bug fixes, or additional features that are beyond the scope of the course as it was taught(see: Changelog).
+
+
+### Changelog
+
+#### [Unreleased]
+- Update to Ruby 3.3.0.
+- Fix N+1 query problem by using dataloader.
+- Add `StudentById` GraphQL query.
+
+#### [2023-database-course] 2023-11-21
+- Initial setup of the university database project for the 2023 database course.
+
