@@ -23,13 +23,13 @@ The revision tagged as `2023-database-course` represents the state of the reposi
 Please note that any changes made to the repository after the lectures were conducted are not part of the course material covered in the lectures. These updates may include enhancements, bug fixes, or additional features that are beyond the scope of the course as it was taught(see: Changelog).
 
 
-### Changelog
+# Changelog
 
-#### [Unreleased]
+## [Unreleased]
 - Update to Ruby 3.3.0.
 - Fix N+1 query problem by using dataloader.
 - Add `StudentById` GraphQL query.
 
-#### [2023-database-course] 2023-11-21
+## [2023-database-course] 2023-11-21
 - Initial setup of the university database project for the 2023 database course.
 
